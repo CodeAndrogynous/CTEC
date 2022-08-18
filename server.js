@@ -1,5 +1,5 @@
 var express = require("express"); //using the express web framework
-
+const port = 3000
 var restaurantController = require('./controllers/restaurantController'); // set restaurantController to the restaurantController class
 var reviewController = require('./controllers/reviewController');
 var memberController = require('./controllers/memberController');
@@ -28,5 +28,5 @@ app.route('/email').post(restaurantController.sendEmail); // active the deleteRe
 //app.route('/search').get(restaurantController.searchRestaurants); // active the deleteReview method if the route is DELETE (method) /review
 
 
-app.listen(8080, "127.0.0.1"); // start the nodejs to be listening for incoming request @ port 8080
-console.log("web server running @ http://127.0.0.1:8080"); // output to console 
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+//console.log("web server running @ http://127.0.0.1:8080"); // output to console 
