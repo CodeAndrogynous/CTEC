@@ -1,5 +1,5 @@
 var express = require("express"); //using the express web framework
-const port = 3000
+const port = 3000;
 var restaurantController = require('./controllers/restaurantController'); // set restaurantController to the restaurantController class
 var reviewController = require('./controllers/reviewController');
 var memberController = require('./controllers/memberController');
