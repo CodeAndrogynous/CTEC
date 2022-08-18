@@ -1,0 +1,36 @@
+<div class="modal fade" id="newReviewModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-light text-center">
+                <h3 class="modal-title text-light">Contribute a Review</h3>
+                <button type="button" class="close bg-dark" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body px-5">
+                <!-- All input to be sent to server, and buttons must be within the 'form' tag -->
+                <form id="reviewForm2">
+                    <div class="row" text-center id="reviewBody">
+                        <label for="nickname">Nickname</label>
+                        <input type="text" id="nickname" class="form-control" required>
+                        <label for="userReview">Review</label>
+                        <textarea id="userReview" required class="form-control form-rounded" rows="3"
+                            cols="100%"></textarea>
+                        <label for="popcorn">Rating</label>
+                        <img src="images/popcorn_bw.png" class="pop" value="1" onmouseover="rateIt(this)" />
+                        <img src="images/popcorn_bw.png" class="pop" value="2" onmouseover="rateIt(this)" />
+                        <img src="images/popcorn_bw.png" class="pop" value="3" onmouseover="rateIt(this)" />
+                        <img src="images/popcorn_bw.png" class="pop" value="4" onmouseover="rateIt(this)" />
+                        <img src="images/popcorn_bw.png" class="pop" value="5" onmouseover="rateIt(this)" />
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="submitReview2"
+                            onclick="addReview()">Submit</button>
+                        <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

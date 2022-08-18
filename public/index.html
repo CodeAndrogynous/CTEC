@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Restaurants Review Website</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/mystyle.css" />
+    <style>
+        #container {
+            background-color: #a5c2cc;
+        }
+    </style>
+</head>
+
+<body onload="getRestaurantData()" id="container">
+    <!-- Include top navigation here -->
+    <div w3-include-html="top-navigation.html" style="padding: 15px;"></div>
+    <!-- This is the container that holds the initial message, heading, and restaurants -->
+    <div class="container">
+        <!-- The message will be shown when the page loads and will
+        disappear after the restaurants are loaded -->
+        <div class="row" id="parent">
+            Retrieving restaurnts from database... Please wait...<br><br>
+            If you are seeing this message for a long time, it is likely
+            that you have a JavaScript error. Troubleshoot your script by
+            using the browser console panel now. Please use either Firefox
+            or Chrome to render this webpage.
+        </div>
+        <!-- Include the banner here -->
+        <div w3-include-html="banner.html" style="padding: 20px;padding-top: 40px;"></div>
+        <!-- Include the search html here -->
+        <div w3-include-html="search.html"></div>
+
+        <p>
+            <!-- This is the heading showing how many restaurants are there -->
+        <h3 id="summary" style="color: white;"></h3>
+        </p>
+        <!-- Displays thumbnails of the restaurants here -->
+        <div id="restaurantsTable" class="row"></div>
+    </div>
+    <div>
+        <!-- Include the restaurants modal here -->
+        <div w3-include-html="restaurant-modal.html"></div>
+        <!-- Include the reviews modal here -->
+        <div w3-include-html="reviews-modal.html"></div>
+        <!-- Include the new reviews modal here -->
+        <div w3-include-html="new-reviews-modal.html"></div>
+        <!-- Include the edit reviews modal here -->
+        <div w3-include-html="edit-reviews-modal.html"></div>
+        <!-- Include the message modal here -->
+        <!-- <div w3-include-html="message-modal.html"></div> -->
+        <!-- Include the about modal here -->
+        <div w3-include-html="about-modal.html"></div>
+        <!-- Include the about register here -->
+        <div w3-include-html="register-modal.html"></div>
+        <!-- Include the about success here -->
+        <div w3-include-html="success-modal.html"></div>
+        <!-- Include the about fail here -->
+        <div w3-include-html="fail-modal.html"></div>
+        <!-- Include the about login here -->
+        <div w3-include-html="login-modal.html"></div>
+
+
+    </div>
+
+
+    <br><br>
+    <!-- Include the footer here -->
+    <div w3-include-html="footer.html"></div>
+</body>
+
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+    //to bring in other HTML on the fly into this page
+    w3.includeHTML();
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/86ec7c1143.js"></script>
+<script src="js/app.js"></script>
+<script src="js/review.js"></script>
+<script src="js/restaurants.js"></script>
+<script src="js/register.js"></script>
+<script src="js/login.js"></script>
+<script src="js/checktoken.js"></script>
+<script src="js/logout.js"></script>
+
+</html>

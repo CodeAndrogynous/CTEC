@@ -1,0 +1,12 @@
+footer {
+    background: #aaa;
+    color: white;
+}
+
+.edit {
+    float: right;
+    padding-right: 10px;
+}
+#navigation{
+    font-family: 'Noto Sans SC', sans-serif, 'Oswald';
+  }
