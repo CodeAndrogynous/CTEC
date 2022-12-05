@@ -3,7 +3,7 @@ var connection = mysql.createConnection({
     host: 'mysqlctecinstance.ccbqtvifzmrg.us-west-2.rds.amazonaws.com',
     port: '3306',
     user: 'admin',
-    password: 'password',
+    password: '',
     database: 'restaurant_review'
 });
 
